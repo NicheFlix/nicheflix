@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicheflix - Your Local Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Nicheflix</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search movies...">
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero" id="heroSection">
+            <div class="hero-content">
+                <h1 id="heroTitle">Welcome to Nicheflix</h1>
+                <p id="heroDescription">Your personal local media streaming service</p>
+                <button class="btn-primary" id="heroPlayBtn">Browse Library</button>
+            </div>
+        </section>
+
+        <section class="media-section">
+            <h2 class="section-title">Your Library</h2>
+            <div class="media-grid" id="mediaGrid">
+                <!-- Media items will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <video id="videoPlayer" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <h2 id="videoTitle">Movie Title</h2>
+                <p id="videoDescription">Movie description</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
